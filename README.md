@@ -1,1 +1,31 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/IlE_uiXQ)
+# Java Custom List Implementations
+
+This Java project demonstrates various custom list behaviors using inheritance, sorting logic, and exception handling.
+
+## 🚀 Features
+
+### 🟩 `SimpleList`
+- Basic list container with add/get operations
+
+### 🟪 `TwoElementList`
+- Can only hold up to 2 elements
+- Overwrites or blocks after max
+
+### 🔼 `KeepSortedList`
+- Maintains sorted order on insertion
+
+### 🧮 `EvensOnly`
+- Accepts only even numbers
+- Throws `OddException` on invalid input
+
+## ⚠️ Custom Exception
+- `OddException` used by `EvensOnly` to enforce input rules
+
+## 🧪 Tests
+Each list class has a matching `Test*.java` file for validation.
+
+## 📦 Run Instructions
+```bash
+javac src/*.java test/*.java
+java test.TestEvensOnly
+java test.TestTwoElementList
